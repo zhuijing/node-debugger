@@ -1,0 +1,47 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "npm debug",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": ["run-script", "debug"],
+            "runtimeVersion": "14.9.0"
+        },
+        {
+            "name": "debugger",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/1.js"
+        },
+        {
+            "name": "没用的",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
+            "args": [
+                "-u",
+                "tdd",
+                "--timeout",
+                "999999",
+                "--colors",
+                "${workspaceFolder}/test/test-rest-services"
+            ],
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "手动 inspect-brk",
+            "type": "node",
+            "request": "attach",
+            "port": 33445
+        },
+        {
+            "name": "自动 inspect-brk",
+            "type": "node",
+            "request": "attach",
+            "processId": "${command:PickProcess}",
+            "smartStep":true
+          }
+    ]
+}

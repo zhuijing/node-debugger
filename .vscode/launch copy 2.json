@@ -1,0 +1,23 @@
+{
+    "version": "0.2.0",
+    "configurations": [{
+        "name": "调试案例",
+        "type": "node",
+        "request": "launch",
+        "skipFiles": [
+            "<node_internals>/**",
+            "${workspaceFolder}/node_modules/**/*.js",
+            "!${workspaceFolder}/**/*.js"
+        ],
+        "program": "${workspaceFolder}/1.js",
+        "args": [
+            "-u",
+            "tdd",
+            "--timeout",
+            "999999",
+            "--colors",
+            "${workspaceFolder}/test/test-rest-services"
+        ],
+        "internalConsoleOptions": "openOnSessionStart"
+    }]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "node-debugger",
+  "version": "1.0.0",
+  "description": "debugger node program",
+  "main": "index.js",
+  "scripts": {
+    "debug": "node 1.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhuijing/node-debugger.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhuijing/node-debugger/issues"
+  },
+  "homepage": "https://github.com/zhuijing/node-debugger#readme"
+}
